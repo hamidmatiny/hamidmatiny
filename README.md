@@ -1,4 +1,4 @@
-# Hi, I'm [Your Name] 👋 
+# Hi, I'm Hamidreza Matiny 👋 
 ### Data Scientist | Machine Learning Engineer | AI Strategist
 
 **[Optional: Open to Work 🟢]** Looking for high-impact roles in Silicon Valley / Remote (FAANG+ Focus).
