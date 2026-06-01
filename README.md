@@ -15,7 +15,7 @@
 
 **Hybrid engineer bridging deep learning mathematics and production infrastructure.**
 
-I build, optimize, and deploy production-grade deep learning systems and low-latency asynchronous APIs — with **6+ years** across core software engineering, computer vision, and ML infrastructure. I specialize in **localized hardware performance optimization** and **end-to-end data pipeline orchestration**, turning research-grade models into reliable services measured by latency, throughput, and deployment stability — not notebook metrics.
+I build, optimize, and deploy production-grade deep learning systems and low-latency distributed data pipelines — with **6+ years** across core software engineering, computer vision, data science, and ML infrastructure. Currently, I bring this experience to **Torc Robotics** as a Quality Assurance and Annotation Specialist, verifying high-fidelity data streams for autonomous vehicle environments. I specialize in **distributed compute scheduling**, **strict data contract enforcement**, and **localized hardware performance optimization**, turning complex multi-modal data streams into robust, stable, and highly scalable production networks.
 
 ---
 
@@ -24,8 +24,10 @@ I build, optimize, and deploy production-grade deep learning systems and low-lat
 #### MLOps & Deployment
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
@@ -37,14 +39,15 @@ I build, optimize, and deploy production-grade deep learning systems and low-lat
 ![Sequence Models](https://img.shields.io/badge/Sequence_Models-RNNs%20%7C%20LSTMs-1a1a2e?style=for-the-badge)
 ![Sensor Fusion](https://img.shields.io/badge/Sensor_Fusion-Multi--Modal-6366f1?style=for-the-badge)
 
-#### Data & Systems Engineering
+#### Data & Distributed Systems
 
+![Ray](https://img.shields.io/badge/Ray_Core-0284C7?style=for-the-badge&logo=ray&logoColor=white)
+![Pandera](https://img.shields.io/badge/Pandera-E11D48?style=for-the-badge)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![PyArrow](https://img.shields.io/badge/PyArrow-FF6F00?style=for-the-badge)
 ![Parquet](https://img.shields.io/badge/Parquet-50C878?style=for-the-badge&logo=apache&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Data Pipelines](https://img.shields.io/badge/Data_Pipelines-ETL%20%7C%20Orchestration-0f766e?style=for-the-badge)
 
 #### Optimization & Acceleration
@@ -52,11 +55,26 @@ I build, optimize, and deploy production-grade deep learning systems and low-lat
 ![GPU Acceleration](https://img.shields.io/badge/GPU_Acceleration-CUDA%20%7C%20MPS-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 ![Mixed Precision](https://img.shields.io/badge/Mixed_Precision-AMP-7c3aed?style=for-the-badge)
 ![torch.compile](https://img.shields.io/badge/torch.compile-Graph_Optimization-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![CUDA / MPS](https://img.shields.io/badge/CUDA%20%2F%20MPS-Hardware_Tuning-000000?style=for-the-badge&logo=apple&logoColor=white)
 
 ---
 
 ## Featured Architectural Builds
+
+### [Sentinel-Ray](https://github.com/hamidmatiny/sentinel-ray)
+
+A high-performance distributed data gatekeeper engineered for streaming machine learning and data pipelines. It intercepts production data feeds to mitigate statistical anomalies, structural degradation, and data drift. The core engine paralyzes data processing workloads via asynchronously scaled **Ray Tasks and stateful Actors**, verifying every batch against programmatic constraints built on **Pandera schema contracts**.
+
+`Ray Core` · `Pandera` · `Distributed Validation` · `Data Quality Gates` · `Docker`
+
+---
+
+### [Hydra Data Factory](https://github.com/hamidmatiny/hydra-data-factory)
+
+Enterprise-grade data infrastructure automation ecosystem focusing on schema safety and decoupled system deployments. Leverages strict behavioral regression contracts engineered through automated **Pytest** testing frameworks. Fully orchestrates cloud infrastructure footprints utilizing **Terraform (Infrastructure as Code)** mapped seamlessly onto target **AWS environments**.
+
+`Terraform` · `AWS Infrastructure` · `Pytest` · `Schema Contracts` · `Continuous Delivery`
+
+---
 
 ### [Itinera](https://github.com/hamidmatiny/itinera)
 
@@ -84,4 +102,4 @@ Localized hardware optimization routines leveraging **mixed-precision (AMP)**, *
 
 ## Engineering Philosophy
 
-> Production-quality code is resource-efficient by design — not optimized as an afterthought. I treat messy multi-modal sensor data as a first-class systems problem: ingest, validate, fuse, and serve with the same rigor applied to model architecture. Success is measured by **deployment metrics** — p99 latency, memory footprint, pipeline reliability, and user-facing outcomes — not theoretical benchmarks that never survive contact with production.
+> Production-quality code is resource-efficient by design — not optimized as an afterthought. I treat messy multi-modal sensor data and massive data-streaming pipelines as first-class systems problems: ingest, distribute, validate, and serve with the same exact rigor applied to model architecture. Success is measured by **deployment metrics** — p99 latency, compute node efficiency, structural schema integrity, and overall pipeline resiliency — not theoretical benchmarks that never survive contact with production data streams.
