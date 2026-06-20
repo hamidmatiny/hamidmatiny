@@ -15,7 +15,7 @@
 
 **Hybrid engineer bridging deep learning mathematics and production infrastructure.**
 
-I build, optimize, and deploy production-grade deep learning systems and low-latency distributed data pipelines — with **6+ years** across core software engineering, computer vision, data science, and ML infrastructure. Currently, I bring this experience to **Torc Robotics** as a Quality Assurance and Annotation Specialist, verifying high-fidelity data streams for autonomous vehicle environments. I specialize in **distributed compute scheduling**, **strict data contract enforcement**, and **localized hardware performance optimization**, turning complex multi-modal data streams into robust, stable, and highly scalable production networks.
+I build, optimize, and deploy production-grade deep learning systems and low-latency distributed data pipelines — with **6+ years** across core software engineering, computer vision, data science, and ML infrastructure. Currently, I bring this experience to **Torc Robotics** as a Data & Quality Assurance – ML Pipelines, verifying high-fidelity data streams for autonomous vehicle environments. I specialize in **distributed compute scheduling**, **strict data contract enforcement**, and **localized hardware performance optimization**, turning complex multi-modal data streams into robust, stable, and highly scalable production networks.
 
 ---
 
