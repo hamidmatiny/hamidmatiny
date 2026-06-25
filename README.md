@@ -18,7 +18,7 @@
 ML Engineer / MLOps Engineer focused on production-grade systems at the intersection
 of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML**.
 ~6 years building deep learning systems, scalable data pipelines, and cloud infrastructure
-(GCP/AWS). Currently at Torc Robotics, working on ML pipeline QA and annotation.
+(GCP/AWS). Currently at Torc Robotics, working on Data Quality Assurance ML Pipeline.
 
 ---
 
