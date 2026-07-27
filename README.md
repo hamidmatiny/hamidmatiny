@@ -13,48 +13,16 @@
 
 ## About Me
 
-<<<<<<< HEAD
 ### Hi, I'm Hamid 👋
 
-ML Engineer / MLOps Engineer focused on production-grade systems at the intersection
-of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML**.
-~6 years building deep learning systems, scalable data pipelines, and cloud infrastructure
-(GCP/AWS). Currently at Torc Robotics, working on Data Quality Assurance ML Pipeline.
-=======
-**I build the full stack an organization needs to run AI systems in production.**
+ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with ~6 years building deep learning systems, scalable data pipelines, and cloud infrastructure (GCP/AWS). Currently at Torc Robotics on the Data Quality Assurance ML Pipeline.
 
-Data foundations, LLM serving and GPU orchestration, and observability with incident response — end to end. I specialize in production-shaped platforms: unified serving contracts across heterogeneous backends, cost-safe GPU scheduling, contract-validated data pipelines, and evidence-grounded operational tooling. Success is measured by serving reliability, GPU cost-safety, and observability that closes the loop — not notebook demos.
->>>>>>> e0b87f3 (Update README.md)
+**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, and observability with incident response — end to end. I specialize in production-shaped platforms: unified serving contracts across heterogeneous backends, cost-safe GPU scheduling, contract-validated data pipelines, and evidence-grounded operational tooling. Success is measured by serving reliability, GPU cost-safety, and observability that closes the loop — not notebook demos.
 
 ---
 
-#### 🛡️ LLM Security & Agentic Systems
-- **[aegis](https://github.com/hamidmatiny/aegis)** — Defense-in-depth security gateway for LLM apps and agents: input/output threat detection, policy-as-code (CEL), tool/MCP permission gating with taint tracking, continuous red-teaming, Ed25519-signed tamper-evident audit trail, and drop-in SDKs.
-- **[AegisFlow](https://github.com/hamidmatiny/AegisFlow)** — Autonomous multi-agent incident response engine (Temporal, PydanticAI, OpenTelemetry) that triages observability alerts and plans mitigations.
-- **[smart-assistant](https://github.com/hamidmatiny/smart-assistant)** — Personal knowledge assistant and workflow agent.
+## Core Expertise
 
-<<<<<<< HEAD
-#### 🌲 Geospatial ML
-- **[terra-OBIA](https://github.com/hamidmatiny/terra-OBIA)** — Object-Based Image Analysis platform for forestry stand delineation, wetland classification, and land cover mapping at province scale.
-- **[terra-obia-etl](https://github.com/hamidmatiny/terra-obia-etl)** — ETL pipeline harmonizing GeoNB/GNB Open Data into labeled training polygons.
-
-#### 🚗 Computer Vision & Autonomous Systems
-- **[NEXUS-CV](https://github.com/hamidmatiny/NEXUS-CV)** — Real-time multi-modal computer vision platform with live observability and full MLOps lifecycle.
-- **[multi-modal-od](https://github.com/hamidmatiny/multi-modal-od)** — Sensor-fusion object detection (radar, LiDAR, camera) for autonomous driving.
-- **[sentinel-ray](https://github.com/hamidmatiny/sentinel-ray)** — Distributed camera telemetry ingestion with Ray, statistical drift detection, and automated incident orchestration.
-- **[vanguard-telemetry-monitor](https://github.com/hamidmatiny/vanguard-telemetry-monitor)** — Fleet telemetry simulation and observability platform with production-like anomaly injection.
-- **[hydra-data-factory](https://github.com/hamidmatiny/hydra-data-factory)** — Serverless AWS pipeline simulating fleet-scale autonomous-vehicle telemetry processing.
-
-#### ⚙️ MLOps & Infrastructure
-- **[vit-fastapi-cloud-deploy](https://github.com/hamidmatiny/vit-fastapi-cloud-deploy)** — FastAPI image classification service, evolved into a cloud-deployed Vision Transformer pipeline.
-- **[cuda-optimization](https://github.com/hamidmatiny/cuda-optimization)** — Deep learning optimization guide adapted for Apple Metal Performance Shaders.
-- **[task-master](https://github.com/hamidmatiny/task-master)** — Production FastAPI + PostgreSQL REST API with Docker and CI/CD.
-- **[bert-inference](https://github.com/hamidmatiny/bert-inference)** — Containerized DistilBERT sentiment-analysis inference service.
-
----
-
-📍 Fredericton, NB, Canada · 🌐 [hamidmatiny.github.io](https://hamidmatiny.github.io)
-=======
 #### LLM Serving & Inference
 
 ![vLLM](https://img.shields.io/badge/vLLM-000000?style=for-the-badge)
@@ -126,15 +94,39 @@ Production-validated AV telemetry lakehouse — the data/lakehouse foundation Ar
 
 ## Also Building
 
-Agentic AI security and edge intelligence running alongside the platform work:
+#### 🛡️ LLM Security & Agentic Systems
 
-- **[aegis](https://github.com/hamidmatiny/aegis)** — LLM/agent security gateway: prompt-injection defense, policy-as-code, and audit trails
-- **[AegisFlow](https://github.com/hamidmatiny/AegisFlow)** — multi-agent incident response on Temporal + PydanticAI + OpenTelemetry
-- **[edgevision](https://github.com/hamidmatiny/edgevision)** — edge CV security/anomaly detection with YOLO + ByteTrack
+- **[aegis](https://github.com/hamidmatiny/aegis)** — Defense-in-depth security gateway for LLM apps and agents: input/output threat detection, policy-as-code (CEL), tool/MCP permission gating with taint tracking, continuous red-teaming, Ed25519-signed tamper-evident audit trail, and drop-in SDKs.
+- **[AegisFlow](https://github.com/hamidmatiny/AegisFlow)** — Autonomous multi-agent incident response engine (Temporal, PydanticAI, OpenTelemetry) that triages observability alerts and plans mitigations.
+- **[smart-assistant](https://github.com/hamidmatiny/smart-assistant)** — Personal knowledge assistant and workflow agent.
+- **[edgevision](https://github.com/hamidmatiny/edgevision)** — Edge CV security/anomaly detection with YOLO + ByteTrack.
+
+#### 🌲 Geospatial ML
+
+- **[terra-OBIA](https://github.com/hamidmatiny/terra-OBIA)** — Object-Based Image Analysis platform for forestry stand delineation, wetland classification, and land cover mapping at province scale.
+- **[terra-obia-etl](https://github.com/hamidmatiny/terra-obia-etl)** — ETL pipeline harmonizing GeoNB/GNB Open Data into labeled training polygons.
+
+#### 🚗 Computer Vision & Autonomous Systems
+
+- **[NEXUS-CV](https://github.com/hamidmatiny/NEXUS-CV)** — Real-time multi-modal computer vision platform with live observability and full MLOps lifecycle.
+- **[multi-modal-od](https://github.com/hamidmatiny/multi-modal-od)** — Sensor-fusion object detection (radar, LiDAR, camera) for autonomous driving.
+- **[sentinel-ray](https://github.com/hamidmatiny/sentinel-ray)** — Distributed camera telemetry ingestion with Ray, statistical drift detection, and automated incident orchestration.
+- **[vanguard-telemetry-monitor](https://github.com/hamidmatiny/vanguard-telemetry-monitor)** — Fleet telemetry simulation and observability platform with production-like anomaly injection.
+- **[vit-fastapi-cloud-deploy](https://github.com/hamidmatiny/vit-fastapi-cloud-deploy)** — FastAPI image classification service, evolved into a cloud-deployed Vision Transformer pipeline.
+- **[cuda-optimization](https://github.com/hamidmatiny/cuda-optimization)** — Deep learning optimization guide adapted for Apple Metal Performance Shaders.
+- See also **[hydra-data-factory](https://github.com/hamidmatiny/hydra-data-factory)** above — the AV telemetry lakehouse foundation behind Argus.
+
+#### ⚙️ MLOps & Infrastructure
+
+- **[task-master](https://github.com/hamidmatiny/task-master)** — Production FastAPI + PostgreSQL REST API with Docker and CI/CD.
+- **[bert-inference](https://github.com/hamidmatiny/bert-inference)** — Containerized DistilBERT sentiment-analysis inference service.
 
 ---
 
 ## Engineering Philosophy
 
 > Production-quality platforms are resource-efficient and evidence-grounded by design — not bolted on after the model works. I treat serving contracts, GPU cost-safety, and observability as first-class systems problems: unify backends, schedule capacity without burning money in CI, validate data at the gate, and close the loop with metrics that survive contact with production. Success is measured by **deployment metrics** — serving reliability, GPU utilization under multi-tenant constraints, pipeline acceptance rates, and operational signal fidelity — not theoretical benchmarks that never leave the lab.
->>>>>>> e0b87f3 (Update README.md)
+
+---
+
+📍 Fredericton, NB, Canada · 🌐 [hamidmatiny.github.io](https://hamidmatiny.github.io)
