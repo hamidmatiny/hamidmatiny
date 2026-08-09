@@ -15,7 +15,7 @@
 
 ### Hi, I'm Hamid 👋
 
-ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with ~6 years building deep learning systems, scalable data pipelines, and cloud infrastructure (GCP/AWS). That work spans **30 public repositories**, including **5 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
+ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with 12 years building deep learning systems, scalable data pipelines, software backend systems, and cloud infrastructure (GCP/AWS). That work spans **30 public repositories**, including **5 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
 
 **I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, computer-vision pipelines, and observability with incident response — end to end. Where it matters, the numbers are measured, not estimated: one lakehouse pipeline processed **42,972 records at a 91.8% acceptance rate with zero post-gate rejections**; another platform runs **45 Docker Compose services** behind **41 automated test files** and **6 active CI workflows**; a third ships **17 services** behind a single multi-warehouse activation contract. Success is serving reliability, GPU cost-safety, and pipeline acceptance rates — not notebook demos.
 
