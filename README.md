@@ -2,7 +2,7 @@
 
 # Mohammadreza Matiny
 
-### AI Infrastructure & MLOps Engineer · LLM Serving · GPU Orchestration · Observability
+### AI Infrastructure & MLOps Engineer · LLM Serving · GPU Orchestration · Computer Vision · Observability
 
 [![Profile Views](https://komarev.com/ghpvc/?username=hamidmatiny&color=0e7490&style=flat-square)](https://github.com/hamidmatiny)
 [![GitHub followers](https://img.shields.io/github/followers/hamidmatiny?style=flat-square&logo=github&color=0e7490)](https://github.com/hamidmatiny?tab=followers)
@@ -15,9 +15,9 @@
 
 ### Hi, I'm Hamid 👋
 
-ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with ~6 years building deep learning systems, scalable data pipelines, and cloud infrastructure (GCP/AWS). Currently at Torc Robotics on the Data Quality Assurance ML Pipeline.
+ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with ~6 years building deep learning systems, scalable data pipelines, and cloud infrastructure (GCP/AWS). That work spans **30 public repositories**, including **5 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
 
-**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, and observability with incident response — end to end. I specialize in production-shaped platforms: unified serving contracts across heterogeneous backends, cost-safe GPU scheduling, contract-validated data pipelines, and evidence-grounded operational tooling. Success is measured by serving reliability, GPU cost-safety, and observability that closes the loop — not notebook demos.
+**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, computer-vision pipelines, and observability with incident response — end to end. Where it matters, the numbers are measured, not estimated: one lakehouse pipeline processed **42,972 records at a 91.8% acceptance rate with zero post-gate rejections**; another platform runs **45 Docker Compose services** behind **41 automated test files** and **6 active CI workflows**; a third ships **17 services** behind a single multi-warehouse activation contract. Success is serving reliability, GPU cost-safety, and pipeline acceptance rates — not notebook demos.
 
 ---
 
@@ -50,12 +50,22 @@ ML/MLOps engineer focused on production-grade systems at the intersection of **L
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 
+#### Computer Vision & Perception
+
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-111F68?style=for-the-badge)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![PyTorch Lightning](https://img.shields.io/badge/PyTorch_Lightning-792EE5?style=for-the-badge&logo=pytorchlightning&logoColor=white)
+
 #### Data Foundations & Systems
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Kafka%20%2F%20Redpanda-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![Iceberg](https://img.shields.io/badge/Apache_Iceberg-1B4E6B?style=for-the-badge)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
 ![PyArrow](https://img.shields.io/badge/PyArrow-FF6F00?style=for-the-badge)
 ![Parquet](https://img.shields.io/badge/Parquet-50C878?style=for-the-badge&logo=apache&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
@@ -64,21 +74,37 @@ ML/MLOps engineer focused on production-grade systems at the intersection of **L
 
 ## Featured Architectural Builds
 
-### Flagship · Sibling Platforms
+### Flagship Platforms
 
-### [Vulcan](https://github.com/hamidmatiny/vulcan) · v1.0.0
+### [Vulcan](https://github.com/hamidmatiny/Vulcan) · v1.2.0
 
-Production-shaped multi-backend LLM serving and GPU-orchestration platform. One unified serving contract across **vLLM**, **Triton Inference Server**, **Ray Serve**, **KServe**, and **BentoML** — with real GPU infra patterns (**MIG** partitioning, **Kueue** multi-tenant scheduling, **Karpenter** autoscaling) validated in CI and applied out-of-band so no GPUs are burned in the pipeline. Includes **SageMaker** / **Bedrock** integration, LoRA/PEFT fine-tuning, DVC data versioning, pluggable MLflow/W&B tracking, TensorRT-LLM templates, GPTQ/AWQ/FP8 quantization, a benchmark-driven routing gateway, and a **LangGraph** advisor agent that is tool-grounded and non-fabricating — CI asserts every number it states is backed by Prometheus/benchmark evidence from that run.
+Production-shaped multi-backend LLM serving and GPU-orchestration platform. One unified serving contract across **vLLM**, **Triton Inference Server**, **Ray Serve**, **KServe**, and **BentoML** — with real GPU infra patterns (**MIG** partitioning, **Kueue** multi-tenant scheduling, **Karpenter** autoscaling) validated in CI so no GPUs are burned in the pipeline. Tagged v1.2.0 across 22 phases: **SageMaker**/**Bedrock** integration, LoRA/PEFT fine-tuning, DVC data versioning, pluggable MLflow/W&B tracking, TensorRT-LLM templates, GPTQ/AWQ/FP8 quantization, cost-per-token tracking, and a **LangGraph** advisor agent that is tool-grounded and non-fabricating — CI asserts every number it states is backed by Prometheus/benchmark evidence from that run.
 
 `LLM Serving` · `GPU Orchestration` · `Kueue` · `Karpenter` · `KServe` · `vLLM` · `Triton` · `Ray Serve` · `Quantization` · `MLOps`
 
 ---
 
-### [Argus](https://github.com/hamidmatiny/argus) · Architecture & Foundation Phase
+### [Argus](https://github.com/hamidmatiny/Argus) · v1.0.0
 
-Vulcan's sibling platform: a unified fleet telemetry, data-quality, MLOps, and observability system currently in active architecture and early-build. Devices stream into a **Kafka/Redpanda** bus; **Ray** and **Flink** harden the data path; **Iceberg** + **Dagster** form the lakehouse and orchestration spine; drift-monitor, incident-engine, and **OpenTelemetry** close the operational loop — with an AI copilot for natural-language query/explain over platform data. Polyglot monorepo (**Go** for incident-engine / API gateway / CLI, **Python** for ingestion / drift / copilot, **TypeScript** for the dashboard, Terraform / Helm / ArgoCD for infra). Ambitious, well-designed scope — not yet feature-complete.
+Vulcan's sibling platform: a production-shaped fleet telemetry, data-quality, MLOps, and observability system. Tagged v1.0.0, with its own CHANGELOG calling it the "first production-shaped release" across Phases 0–15 — a **45-service** Docker Compose stack, **41 test files** (including Kafka integration tests), and **6 active CI workflows**. Devices stream into a **Kafka/Redpanda** bus; **Ray** and **Flink** harden the data path; **Iceberg** + **Trino** form the lakehouse; **Dagster**/MLflow orchestrate; drift-monitor, an **OPA**-backed incident-engine, and **OpenTelemetry** close the operational loop; a read-only, Qdrant-RAG AI copilot ships with its own eval harness. Polyglot monorepo (**Go** for incident-engine / API gateway / CLI, **Python** for ingestion / drift / copilot, **Next.js** dashboard, Terraform / Helm / ArgoCD for infra).
 
-`Fleet Telemetry` · `Iceberg` · `Dagster` · `Kafka` · `Ray` · `Flink` · `OpenTelemetry` · `MLOps` · `Observability`
+`Fleet Telemetry` · `Iceberg` · `Trino` · `Dagster` · `Kafka` · `Ray` · `Flink` · `OPA` · `OpenTelemetry`
+
+---
+
+### [PRISM](https://github.com/hamidmatiny/PRISM) · v1.2.0
+
+Multi-warehouse fleet-intelligence platform. Tagged v1.2.0, with all **20 phases (0–19) complete** — including a golden-path chaos end-to-end test run against the live Compose stack. Camera/sensor ingest splits into a **PySpark** medallion lakehouse (bronze → silver → gold, **dbt**-modeled) and an **OpenCV**/**ONNX** YOLO-family CV service that routes low-confidence findings to a **Django** control-plane review queue. Gold data fans out through one activation contract to **Redshift** and **Snowflake**, mirrors to **Databricks**/Azure ADLS for disaster recovery, and feeds a **Vue 3 + Three.js** digital-twin cockpit; a per-asset circuit-breaker incident-engine runs OPA/Rego trip policies; a tool-grounded AI copilot answers only from evidence it can cite. **17-service** Docker Compose stack, **19 test files**, 2 CI workflows.
+
+`PySpark` · `Databricks` · `dbt` · `OpenCV` · `ONNX` · `Django` · `Vue` · `Snowflake` · `Redshift`
+
+---
+
+### [FORGE](https://github.com/hamidmatiny/FORGE) · v0.2.0
+
+Offline AV perception & auto-labeling platform. Tagged v0.2.0, with all **11 phases complete**. An 8-stage `forge` CLI pipeline runs end to end locally: ingest (nuScenes → Parquet lake) → detect2d (Faster R-CNN) and detect3d (PointNet-style) → track (SORT: Kalman + Hungarian IoU) → fuse (calibrated sensor fusion) → label (active learning / pseudo-labeling) → evaluate (BEV distance, mAP against held-out ground truth) → curate (LanceDB dedup) → visualize (rerun.io / Foxglove MCAP). A parallel cloud path (S3 → Lambda → SQS → DynamoDB → EventBridge → Step Functions → ECS Fargate → Glue → Athena, 11 tables) is Terraform-defined and CI-verified — deliberately never applied against live AWS, the same cost-safety policy as Vulcan, PRISM, and hydra-data-factory. Detection heads are documented honestly as randomly-initialized research baselines, not tuned models.
+
+`Computer Vision` · `PyTorch Lightning` · `Sensor Fusion` · `Ray` · `LanceDB` · `Terraform`
 
 ---
 
@@ -114,7 +140,6 @@ Production-validated AV telemetry lakehouse — the data/lakehouse foundation Ar
 - **[vanguard-telemetry-monitor](https://github.com/hamidmatiny/vanguard-telemetry-monitor)** — Fleet telemetry simulation and observability platform with production-like anomaly injection.
 - **[vit-fastapi-cloud-deploy](https://github.com/hamidmatiny/vit-fastapi-cloud-deploy)** — FastAPI image classification service, evolved into a cloud-deployed Vision Transformer pipeline.
 - **[cuda-optimization](https://github.com/hamidmatiny/cuda-optimization)** — Deep learning optimization guide adapted for Apple Metal Performance Shaders.
-- See also **[hydra-data-factory](https://github.com/hamidmatiny/hydra-data-factory)** above — the AV telemetry lakehouse foundation behind Argus.
 
 #### ⚙️ MLOps & Infrastructure
 
