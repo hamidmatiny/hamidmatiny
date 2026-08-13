@@ -108,6 +108,14 @@ Offline AV perception & auto-labeling platform. Tagged v0.2.0, with all **11 pha
 
 ---
 
+### [aegis](https://github.com/hamidmatiny/aegis) · v0.3.1
+
+AI-native defense-in-depth gateway for LLM apps and agents. Tagged v0.3.1, with all **12 build-order stages complete** — an **11-service** Docker Compose stack, **53 test files**, 3 CI workflows (ci, release, security). A **Go** gateway routes requests through Python input-defense detectors, a **Go + CEL** policy engine, and a provider-agnostic model router, then output-defense detectors (plus an LLM judge) before any response releases; a separate agent-gate enforces tool/MCP permissions with taint tracking; every decision is **Ed25519**-signed into a Postgres audit trail. Security decisions fail closed — an outage returns `502`, never an unchecked response — documented explicitly in `FAILURE_MODES.md`. It also publishes its own adaptive red-team result rather than a vendor catch-rate demo: real-model hardening cuts round-1 bypass rate (10.8% → 9.2%), but **overall bypass rate under sustained adaptive attack stays flat at ~48%** — reported honestly rather than smoothed over.
+
+`LLM Security` · `Policy-as-Code` · `CEL` · `Prompt Injection` · `Tamper-Evident Audit` · `Red-Teaming` · `Go` · `Python`
+
+---
+
 ### Foundation
 
 ### [hydra-data-factory](https://github.com/hamidmatiny/hydra-data-factory)
@@ -122,7 +130,6 @@ Production-validated AV telemetry lakehouse — the data/lakehouse foundation Ar
 
 #### 🛡️ LLM Security & Agentic Systems
 
-- **[aegis](https://github.com/hamidmatiny/aegis)** — Defense-in-depth security gateway for LLM apps and agents: input/output threat detection, policy-as-code (CEL), tool/MCP permission gating with taint tracking, continuous red-teaming, Ed25519-signed tamper-evident audit trail, and drop-in SDKs.
 - **[AegisFlow](https://github.com/hamidmatiny/AegisFlow)** — Autonomous multi-agent incident response engine (Temporal, PydanticAI, OpenTelemetry) that triages observability alerts and plans mitigations.
 - **[smart-assistant](https://github.com/hamidmatiny/smart-assistant)** — Personal knowledge assistant and workflow agent.
 - **[edgevision](https://github.com/hamidmatiny/edgevision)** — Edge CV security/anomaly detection with YOLO + ByteTrack.
