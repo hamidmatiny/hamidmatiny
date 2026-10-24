@@ -15,9 +15,9 @@
 
 ### Hi, I'm Hamid 👋
 
-ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with 12 years building deep learning systems, scalable data pipelines, software backend systems, and cloud infrastructure (GCP/AWS). That work spans **30 public repositories**, including **5 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
+ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with 4 years building deep learning systems, scalable data pipelines, software backend systems, and cloud infrastructure (GCP/AWS). That work spans **10 core repositories**, including **4 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
 
-**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, computer-vision pipelines, and observability with incident response — end to end. Where it matters, the numbers are measured, not estimated: one lakehouse pipeline processed **42,972 records at a 91.8% acceptance rate with zero post-gate rejections**; another platform runs **45 Docker Compose services** behind **41 automated test files** and **6 active CI workflows**; a third ships **17 services** behind a single multi-warehouse activation contract. Success is serving reliability, GPU cost-safety, and pipeline acceptance rates — not notebook demos.
+**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, computer-vision pipelines, and observability with incident response — end to end. Where it matters, the numbers are measured, not estimated: one lakehouse pipeline processed **42,972 records at a 91.8% acceptance rate with zero post-gate rejections**; another platform runs **32 Docker Compose services** behind **40 test files** and **6 active CI workflows**; a third ships **17 services** behind a single multi-warehouse activation contract; a multi-agent incident responder recorded **0/27 false fixes** on a 72-case synthetic benchmark. Success is serving reliability, GPU cost-safety, and pipeline acceptance rates — not notebook demos.
 
 ---
 
@@ -31,6 +31,12 @@ ML/MLOps engineer focused on production-grade systems at the intersection of **L
 ![KServe](https://img.shields.io/badge/KServe-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![BentoML](https://img.shields.io/badge/BentoML-000000?style=for-the-badge)
 ![TensorRT-LLM](https://img.shields.io/badge/TensorRT--LLM-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+
+#### Agentic AI
+
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
 
 #### GPU Orchestration & Cloud
 
@@ -67,6 +73,8 @@ ML/MLOps engineer focused on production-grade systems at the intersection of **L
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
 ![PyArrow](https://img.shields.io/badge/PyArrow-FF6F00?style=for-the-badge)
+![Ray](https://img.shields.io/badge/Ray-028CF0?style=for-the-badge&logo=ray&logoColor=white)
+![pandera](https://img.shields.io/badge/pandera-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Parquet](https://img.shields.io/badge/Parquet-50C878?style=for-the-badge&logo=apache&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
 
@@ -86,7 +94,7 @@ Production-shaped multi-backend LLM serving and GPU-orchestration platform. One 
 
 ### [Argus](https://github.com/hamidmatiny/Argus) · v1.0.0
 
-Vulcan's sibling platform: a production-shaped fleet telemetry, data-quality, MLOps, and observability system. Tagged v1.0.0, with its own CHANGELOG calling it the "first production-shaped release" across Phases 0–15 — a **45-service** Docker Compose stack, **41 test files** (including Kafka integration tests), and **6 active CI workflows**. Devices stream into a **Kafka/Redpanda** bus; **Ray** and **Flink** harden the data path; **Iceberg** + **Trino** form the lakehouse; **Dagster**/MLflow orchestrate; drift-monitor, an **OPA**-backed incident-engine, and **OpenTelemetry** close the operational loop; a read-only, Qdrant-RAG AI copilot ships with its own eval harness. Polyglot monorepo (**Go** for incident-engine / API gateway / CLI, **Python** for ingestion / drift / copilot, **Next.js** dashboard, Terraform / Helm / ArgoCD for infra).
+Vulcan's sibling platform: a production-shaped fleet telemetry, data-quality, MLOps, and observability system. Tagged v1.0.0, with its own CHANGELOG calling it the "first production-shaped release" across Phases 0–15 — a **32-service** Docker Compose stack, **40 test files** (including Kafka integration tests) plus e2e chaos, smoke, and k6 load scripts, and **6 active CI workflows**. Devices stream into a **Kafka/Redpanda** bus; **Ray** and **Flink** harden the data path; **Iceberg** + **Trino** form the lakehouse; **Dagster**/MLflow orchestrate; drift-monitor, an **OPA**-backed incident-engine, and **OpenTelemetry** close the operational loop; a read-only, Qdrant-RAG AI copilot ships with its own eval harness. Polyglot monorepo (**Go** for incident-engine / API gateway / CLI, **Python** for ingestion / drift / copilot, **Next.js** dashboard, Terraform / Helm / ArgoCD for infra).
 
 `Fleet Telemetry` · `Iceberg` · `Trino` · `Dagster` · `Kafka` · `Ray` · `Flink` · `OPA` · `OpenTelemetry`
 
@@ -108,11 +116,19 @@ Offline AV perception & auto-labeling platform. Tagged v0.2.0, with all **11 pha
 
 ---
 
-### [aegis](https://github.com/hamidmatiny/aegis) · v0.3.1
+### [aegis](https://github.com/hamidmatiny/aegis) · v0.6.0
 
-AI-native defense-in-depth gateway for LLM apps and agents. Tagged v0.3.1, with all **12 build-order stages complete** — an **11-service** Docker Compose stack, **53 test files**, 3 CI workflows (ci, release, security). A **Go** gateway routes requests through Python input-defense detectors, a **Go + CEL** policy engine, and a provider-agnostic model router, then output-defense detectors (plus an LLM judge) before any response releases; a separate agent-gate enforces tool/MCP permissions with taint tracking; every decision is **Ed25519**-signed into a Postgres audit trail. Security decisions fail closed — an outage returns `502`, never an unchecked response — documented explicitly in `FAILURE_MODES.md`. It also publishes its own adaptive red-team result rather than a vendor catch-rate demo: real-model hardening cuts round-1 bypass rate (10.8% → 9.2%), but **overall bypass rate under sustained adaptive attack stays flat at ~48%** — reported honestly rather than smoothed over.
+AI-native defense-in-depth gateway for LLM apps and agents. Tagged v0.6.0, with all **12 build-order stages** and a second hardening pass (stages A–D) complete — a **14-service** Docker Compose stack, **89 test files**, 4 CI workflows (ci, release, security, arm-auto-merge). A **Go** gateway routes requests through Python input-defense detectors, a **Go + CEL** policy engine, and a provider-agnostic model router, then output-defense detectors (plus an LLM judge) before any response releases; a separate agent-gate enforces tool/MCP permissions with taint tracking; every decision is **Ed25519**-signed into a Postgres audit trail. Security decisions fail closed — an outage returns `502`, never an unchecked response — documented explicitly in `FAILURE_MODES.md`. It also publishes its own adaptive red-team result rather than a vendor catch-rate demo, reporting round-1 and adaptive bypass rates separately: real-model hardening cuts round-1 bypass rate (10.8% → 9.2%), while by round 3 of an adaptive campaign **bypass rate is 72.8% → 75.0%** — reported honestly rather than smoothed over.
 
 `LLM Security` · `Policy-as-Code` · `CEL` · `Prompt Injection` · `Tamper-Evident Audit` · `Red-Teaming` · `Go` · `Python`
+
+---
+
+### [MERIDIAN](https://github.com/hamidmatiny/MERIDIAN) · v1.0.1
+
+Multi-agent data-incident response on **LangGraph**. Tagged v1.0.1, with **Phases 0–7 complete** — **558 offline tests** with CI green on Linux, a **9-node** LangGraph state machine, and **3 MCP servers**. Sentinel runs **pandera** contracts on **Ray**; triage and root cause query read-only MCP tools (lineage, data, history), and a grounding guardrail drops any cited event the tools never returned; fix writes a patch and a regression test; a pre-critic dry run and a second-model critic review it; a deterministic verifier replays the failing partition in a sandbox; a **Slack** approval gate holds every patch for a human; a postmortem and a hash-chained Postgres audit log record the outcome. On a **72-case synthetic benchmark**: **72/72** detection, **71/72** causal accuracy, **0/27 false fixes**, **0/30** hard-mode false positives, and the verifier blocked **16/16** bad patches the LLM critic approved — **$0.00** on local **Ollama** models. Caveat: synthetic benchmark; fix attempts exhausted on 26/72 cases.
+
+`Multi-Agent` · `LangGraph` · `MCP` · `Human-in-the-Loop` · `pandera` · `Ray` · `Ollama` · `OpenTelemetry` · `LLM Evaluation`
 
 ---
 
