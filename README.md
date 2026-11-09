@@ -15,9 +15,9 @@
 
 ### Hi, I'm Hamid 👋
 
-ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with 4 years building deep learning systems, scalable data pipelines, software backend systems, and cloud infrastructure (GCP/AWS). That work spans **10 core repositories**, including **4 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
+ML/MLOps engineer focused on production-grade systems at the intersection of **LLM security & agentic infrastructure**, **computer vision**, and **geospatial ML** — with 4 years building deep learning systems, scalable data pipelines, software backend systems, and cloud infrastructure (GCP/AWS). That work spans **11 core repositories**, including **4 production-shaped platforms** with real CI/CD, Terraform-provisioned infrastructure, and tagged releases rather than perpetual drafts.
 
-**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, computer-vision pipelines, and observability with incident response — end to end. Where it matters, the numbers are measured, not estimated: one lakehouse pipeline processed **42,972 records at a 91.8% acceptance rate with zero post-gate rejections**; another platform runs **32 Docker Compose services** behind **40 test files** and **6 active CI workflows**; a third ships **17 services** behind a single multi-warehouse activation contract; a multi-agent incident responder recorded **0/27 false fixes** on a 72-case synthetic benchmark. Success is serving reliability, GPU cost-safety, and pipeline acceptance rates — not notebook demos.
+**I build the full stack an organization needs to run AI systems in production.** Data foundations, LLM serving and GPU orchestration, computer-vision pipelines, and observability with incident response — end to end. Where it matters, the numbers are measured, not estimated: one lakehouse pipeline processed **42,972 records at a 91.8% acceptance rate with zero post-gate rejections**; another platform runs **32 Docker Compose services** behind **40 test files** and **6 active CI workflows**; a third ships **17 services** behind a single multi-warehouse activation contract; a multi-agent incident responder recorded **0/27 false fixes** on a 72-case synthetic benchmark; and an A2A agent exchange held **attack-caused harm to 2/100 against 64/100 without its trust layer** on a frozen 100-case test split. Success is serving reliability, GPU cost-safety, and pipeline acceptance rates — not notebook demos.
 
 ---
 
@@ -37,6 +37,8 @@ ML/MLOps engineer focused on production-grade systems at the intersection of **L
 
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
+![A2A](https://img.shields.io/badge/A2A_Protocol-4285F4?style=for-the-badge)
+![CrewAI](https://img.shields.io/badge/CrewAI-FF5A50?style=for-the-badge)
 
 #### GPU Orchestration & Cloud
 
@@ -83,6 +85,14 @@ ML/MLOps engineer focused on production-grade systems at the intersection of **L
 ## Featured Architectural Builds
 
 ### Flagship Platforms
+
+### [BOURSE](https://github.com/hamidmatiny/bourse) · v1.0.0
+
+A2A v1.0 multi-vendor agent exchange. Tagged v1.0.0, with **Phases 0–7 complete** — **871 unit + 29 DB tests** with CI green, **54 ADRs**, and a **17-service** Docker Compose stack plus **15 adversary agents**. Vendors publish Agent Cards signed with **JWS** over RFC 8785 canonical JSON, verified only against keys pinned at onboarding; card text is linted, and every agent passes a deterministic admission exam before listing. A **LangGraph** broker splits a job into subtasks and delegates each over **A2A** to the agent with the best measured reliability, cost and latency; agents built on LangGraph, **CrewAI** and plain a2a-sdk call their own **MCP** tools through a metering proxy with per-task token caps in front of local **Ollama** models. Spot checks, canaries, an egress DNS sinkhole and usage-misreport checks feed a deterministic trust engine (never an LLM); reinstating a quarantined agent needs a fresh exam plus a **Slack** approval. On a frozen 100-case test split (Wilson 95% CIs): with adversaries in the pool, **attack-caused harm 2/100 with the trust layer vs 64/100 without it**, grader pass **83/100 vs 69/100**; a 21-row attack suite was **caught 18/21 with 0/21 missed**; ablations show removing the sinkhole lets exfiltration through **9/9**. Results are generated from tracked data and CI fails on drift. Caveats published: a quiet sleeper caused **6/14** harmed tasks before a canary caught it; on an honest-only pool the broker is 15% cheaper and 18% faster than random selection but not more accurate (85/100 vs 88/100); one local model on one machine.
+
+`A2A` · `MCP` · `Agent Trust & Security` · `LangGraph` · `CrewAI` · `JWS / RFC 8785` · `Adversarial Benchmarks` · `Ollama` · `Human-in-the-Loop`
+
+---
 
 ### [Vulcan](https://github.com/hamidmatiny/Vulcan) · v1.2.0
 
